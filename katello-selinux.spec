@@ -19,7 +19,7 @@
 %define modulename katello
 
 Name:           %{modulename}-selinux
-Version:        1.4.1
+Version:        1.4.2
 Release:        1%{?dist}
 Summary:        SELinux policy module supporting Katello
 
@@ -126,6 +126,78 @@ fi
 %attr(0750,root,katello-shared) %{_sysconfdir}/katello/secure
 
 %changelog
+* Sat Apr 27 2013 Mike McCune <mmccune@redhat.com> 1.4.2-1
+- adding rel-eng dir for new package location (mmccune@redhat.com)
+- Adding LICENSE to new repository. (ehelms@redhat.com)
+- Automatic commit of package [katello-selinux] release [1.4.1-1].
+  (jsherril@redhat.com)
+- version bump to 1.4 (jsherril@redhat.com)
+- Automatic commit of package [katello-selinux] release [1.3.2-1].
+  (jsherril@redhat.com)
+- copyright update (jsherril@redhat.com)
+- remove old changelog entries (msuchy@redhat.com)
+- Automatic commit of package [katello-selinux] release [1.3.1-1].
+  (lzap+git@redhat.com)
+- 879094 - a few updates to katello & katello-selinux spec based on comments
+  (jomara@redhat.com)
+- 879094 - CVE-2012-5561 - fix permissions on /etc/katello/secure
+  (jomara@redhat.com)
+- Bumping package versions for 1.3. (ehelms@redhat.com)
+- Bumping package versions for 1.1. (lzap+git@redhat.com)
+- Automatic commit of package [katello-selinux] release [1.1.2-1].
+  (msuchy@redhat.com)
+- package katello-selinux-relabel (msuchy@redhat.com)
+- do not pretend that we support MLS or Simple selinux (msuchy@redhat.com)
+- do not run restorcon twice (msuchy@redhat.com)
+- Automatic commit of package [katello-selinux] release [1.1.1-1].
+  (mmccune@redhat.com)
+- buildroot and %%clean section is not needed (msuchy@redhat.com)
+- Bumping package versions for 1.1. (msuchy@redhat.com)
+- Automatic commit of package [katello-selinux] release [1.0.1-1].
+  (msuchy@redhat.com)
+- bump up version to 1.0 (msuchy@redhat.com)
+- Automatic commit of package [katello-selinux] release [0.2.7-1].
+  (msuchy@redhat.com)
+- selinux - retab (lzap+git@redhat.com)
+- selinux - katello configure denials (lzap+git@redhat.com)
+- point Source0 to fedorahosted.org where tar.gz are stored (msuchy@redhat.com)
+- %%defattr is not needed since rpm 4.4 (msuchy@redhat.com)
+- Automatic commit of package [katello-selinux] release [0.2.6-1].
+  (lzap+git@redhat.com)
+- 828533 - removing semanage port rule from installer (lzap+git@redhat.com)
+- 828533 - changing to proper QPIDD SSL port (lzap+git@redhat.com)
+- Automatic commit of package [katello-selinux] release [0.2.5-1].
+  (lzap+git@redhat.com)
+- encryption - plain text passwords encryption (lzap+git@redhat.com)
+- Automatic commit of package [katello-selinux] release [0.2.4-1].
+  (mbacovsk@redhat.com)
+- 805124 - Do a security review of all world-readable config file
+  (mbacovsk@redhat.com)
+- 803761 - adding man page for selinux-enable (lzap+git@redhat.com)
+- Automatic commit of package [katello-selinux] release [0.2.3-1].
+  (lzap+git@redhat.com)
+- 801752 - Errors installing katello-selinux (lzap+git@redhat.com)
+- Automatic commit of package [katello-selinux] release [0.2.2-1].
+  (lzap+git@redhat.com)
+- 761314 - Make sure katello-agent communicates with ssl (mbacovsk@redhat.com)
+- Automatic commit of package [katello-selinux] release [0.2.1-1].
+  (mmccune@redhat.com)
+- 790507 - fixing httpds SAM denials of mod_proxy (lzap+git@redhat.com)
+- Automatic commit of package [katello-selinux] release [0.1.5-1].
+  (jomara@redhat.com)
+- katello-selinux requires katello-common instead of katello
+  (jomara@redhat.com)
+- Automatic commit of package [katello-selinux] release [0.1.4-1].
+  (lzap+git@redhat.com)
+- selinux - adding requirement for the main package (lzap+git@redhat.com)
+- selinux - adding rh header (lzap+git@redhat.com)
+- Automatic commit of package [katello-selinux] release [0.1.3-1].
+  (lzap+git@redhat.com)
+- selinux - adding katello-selinux-enable script (lzap+git@redhat.com)
+- Automatic commit of package [katello-selinux] release [0.1.2-1].
+  (lzap+git@redhat.com)
+- renaming katello-common-selinux to katello-selinux (lzap+git@redhat.com)
+
 * Fri Apr 12 2013 Justin Sherrill <jsherril@redhat.com> 1.4.1-1
 - version bump to 1.4 (jsherril@redhat.com)
 
