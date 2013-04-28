@@ -19,7 +19,7 @@
 %define modulename katello
 
 Name:           %{modulename}-selinux
-Version:        1.4.2
+Version:        1.4.3
 Release:        1%{?dist}
 Summary:        SELinux policy module supporting Katello
 
@@ -126,6 +126,9 @@ fi
 %attr(0750,root,katello-shared) %{_sysconfdir}/katello/secure
 
 %changelog
+* Sat Apr 27 2013 Justin Sherrill <jsherril@redhat.com> 1.4.3-1
+- New Build after repo reorganization
+
 * Sat Apr 27 2013 Mike McCune <mmccune@redhat.com> 1.4.2-1
 - adding rel-eng dir for new package location (mmccune@redhat.com)
 - Adding LICENSE to new repository. (ehelms@redhat.com)
