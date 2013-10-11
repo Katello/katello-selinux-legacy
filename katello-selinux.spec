@@ -19,7 +19,7 @@
 %define modulename katello
 
 Name:           %{modulename}-selinux
-Version:        1.5.0
+Version:        1.5.1
 Release:        1%{?dist}
 Summary:        SELinux policy module supporting Katello
 
@@ -126,6 +126,9 @@ fi
 %attr(0750,root,katello-shared) %{_sysconfdir}/katello/secure
 
 %changelog
+* Fri Oct 11 2013 Partha Aji <paji@redhat.com> 1.5.1-1
+- Bumping package versions for 1.5 (paji@redhat.com)
+
 * Fri Oct 11 2013 Partha Aji <paji@redhat.com> 1.4.5-1
 - Autobuild f19 packages (paji@redhat.com)
 - Added fedora 19 to releasers and tito.props (paji@redhat.com)
